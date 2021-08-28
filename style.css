@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bg-cover{
+    background: rgb(20, 20, 20);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-animations {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
