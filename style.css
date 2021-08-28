@@ -32,4 +32,21 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    background: transparent;
+}
+
+.animation-block{
+    height: 100%;
+    /* transform: skew(12deg); */
+    background: #000;
+    z-index: 100;
+    width: 10%;
+}
+.animation-block.active{
+    background: #fff;
+    transition: all 50ms ease;
+}
+.animation-block.fading{
+    background: #000;
+    transition: all 200ms ease-in-out;
 }
