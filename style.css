@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
     font-size: 62.5%;
-    
+
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     height: 100vh;
 }
 
-.bg-cover{
+.bg-cover {
     background: rgb(20, 20, 20);
     width: 100%;
     height: 100%;
@@ -36,19 +37,48 @@ body {
     overflow: hidden;
 }
 
-.animation-block{
+.animation-text {
+    color: #000;
+    font-size: 5.4rem;
+}
+
+.animation-block {
     height: 100%;
     /* transform: skew(12deg); */
     background: #000;
     z-index: 100;
     width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.animation-block.active{
+
+.animation-block.active {
     background: #fff;
     transition: all 50ms ease;
 
 }
-.animation-block.fading{
+
+.animation-block.fading {
     background: #000;
     transition: all 200ms ease-in-out;
+}
+
+.animation-block.jump {
+    margin-bottom: 15rem;
+    transition: all 0.2s ease-in;
+}
+
+.animation-block.drop {
+    margin-bottom: 0rem;
+    transition: all 0.3s ease-out;
+}
+
+.bg-animations {
+    clip-path: circle(100%);
+}
+
+.bg-animations.closed {
+    clip-path: circle(0rem);
+    transition: all 0.5s ease-in-out;
 }
