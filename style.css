@@ -33,6 +33,7 @@ body {
     width: 100%;
     height: 100%;
     background: transparent;
+    overflow: hidden;
 }
 
 .animation-block{
@@ -45,6 +46,7 @@ body {
 .animation-block.active{
     background: #fff;
     transition: all 50ms ease;
+
 }
 .animation-block.fading{
     background: #000;

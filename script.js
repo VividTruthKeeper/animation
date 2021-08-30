@@ -1,36 +1,27 @@
 let animBlocks = document.querySelectorAll('.animation-block');
 
 
+// window.addEventListener('click', () => {
+    let counter = 0;
+    setInterval(() => {
+        if(counter === animBlocks.length){
+            clearInterval;
+        }else{
+            bgAnimationEnder(animBlocks[counter]);
+            counter++;
+        }
 
-animBlocks.forEach(el => {
-    el.addEventListener('mouseover', bgAnimationEnder);
-})
+    }, 400);
+// })
 
-function bgAnimationEnder(){
-    this.classList.add('active');
+
+function bgAnimationEnder(element){
+    element.classList.add('active');
     setTimeout(() => {
-        this.classList.add('fading')
-    }, 100);
+        element.classList.add('fading')
+    }, 50);
     setTimeout(() => {
-        this.classList.remove('active');
-        this.classList.remove('fading');
-    }, 200);
+        element.classList.remove('active');
+        element.classList.remove('fading');
+    }, 300);
 };
-// function indexer(elClassName, addedElClassName, triggerClassName, addedTriggerClassName, startNumber){
-//     let counter = startNumber;
-//     let  obj = document.querySelectorAll(`.${elClassName}`);
-//     obj.forEach(el => {
-//         el.classList.add(`${addedElClassName}-${counter}`);
-//         counter++;
-//     });
-//     counter = startNumber;
-//     let trig = document.querySelectorAll(`.${triggerClassName}`);
-//     trig.forEach(el => {
-//         el.classList.add(`${addedTriggerClassName}-${counter}`);
-//         counter++;
-//     })
-    
-// };
-
-// indexer("animation-block", "animated", "bg-animations", "bg-animations", 1);
-
