@@ -1,4 +1,4 @@
-# My Personal Portfolio
+# Template
 
 ---
 
@@ -9,3 +9,4 @@
 - ChromaJS
 
 ---
+## You can use this wherever you want!
